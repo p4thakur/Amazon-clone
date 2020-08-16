@@ -1,0 +1,75 @@
+.header {
+  background-color: #131921;
+  display: flex; /*this bring component inside header div in rows*/
+  align-items: center;
+  /*these below 3 propertywill make my nav stick**/
+  position: sticky;
+  top: 0;
+  z-index: 100; /**read more about it*/
+}
+
+.header_logo {
+  width: 100px;
+  object-fit: contain;
+  margin-top: 18px;
+  margin-left: 20px;
+  margin-right: 20px; /*to keeo distance away from my serarch bar**/
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header_link {
+  color: white;
+  text-decoration: none; /*this remove underlin from my links*/
+}
+
+.header_option {
+  display: flex;
+  /*it chnage my flex directin to vertical*/
+  flex-direction: column;
+  margin-left: 10px; /*to kee the header_option aparts*/
+  margin-right: 10px;
+}
+
+.header_option_line1 {
+  font-size: 10px;
+}
+
+.header_option_line2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header_option_backet {
+  display: flex;
+}
+
+.header_basket_count {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header_searchIcon {
+  background-color: #cd9042;
+  height: 22px !important; /*important indicateignore material ui rule and use mine**/
+  padding: 5px; /**for some reson padding helped me to increased hight.check why?*/
+}
+
+.header_searchInput {
+  height: 12px;
+  padding: 10px; /*it actually increasing my size of input serach par in this case*/
+  width: 100%; /*note its 100percentage not pixels*/
+  border: none;
+}
+
+.header_search {
+  /**importnan to keep search bar align*/
+  display: flex; /*this keep serach input and seerach icon in same line*/
+  flex: 1; /**this indicate the header search will take any space/it can strech up to the point space is avialable*/
+}
+/* .header_logo>:hover{
+
+} */

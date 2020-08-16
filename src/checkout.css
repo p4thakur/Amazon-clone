@@ -1,0 +1,17 @@
+.checkout {
+  padding: 20px; /*keep our distance away from header*/
+  background-color: white;
+  height: max-content;
+  display: flex;
+}
+
+.checkout_ad {
+  width: 100%; /*this property makes lot of deffrent to fit my image on the page**/
+  margin-bottom: 10px;
+}
+
+.checkout_title {
+  padding: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid lightgray;
+}

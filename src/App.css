@@ -1,0 +1,4 @@
+* {
+  /* my default react give us margin so I am removing any margin at start */
+  margin: 0;
+}

@@ -1,0 +1,23 @@
+.home {
+  margin-left: auto; /*what auto do?it adjus titslef based on header amx width*/
+  margin-right: auto;
+  max-width: 1300px;
+}
+
+.home_row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.home_image {
+  width: 100%;
+  object-fit: contain;
+  /**this print photoshop effect to my images.4 th one indccate opacity*/
+
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3));
+  z-index: -1; /**it says if anuthin is inforn =t of it, show that things.
+  in our case product componet can come above our home image*/
+  margin-bottom: -40px; /*this bring below compent upward. this creates magic**/
+}

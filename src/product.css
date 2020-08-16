@@ -1,0 +1,50 @@
+.product {
+  display: flex; /*rember i have only three element in it productinfo,imag.button**/
+  flex-direction: column;
+  /*lets limit the size of one product**/
+  align-items: center;
+  /* justify-content: flex-end; */
+  min-width: 100px;
+  max-height: 400px;
+  background-color: white;
+  margin: 10px;
+  z-index: 1;
+  padding: 20px;
+  width: 100%; /**this is importnat. It will allow  our componet to take as 
+  as much sapce as avialble from its left ot righ. So if ihave 2 producrt
+  than they will take fill wdith, if i have 3 product they will also equally
+  going to take 3 space product***/
+}
+.product_star {
+  color: #ffbc00;
+  display: flex;
+}
+
+.product_rating {
+  display: flex;
+}
+
+.product_info {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.product_price {
+  margin-top: 10px;
+}
+
+/**New thing. If i don't want to scpefiy class naem for for aan element
+and that element ois child of e=another element . for example
+product is parent of img so*/
+.product > img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px; /*kepp distance between button and TV**/
+}
+
+.product > button {
+  background-color: #f0c14b;
+  border: 1px solid;
+  /* border-color: ; its agraident color */
+}
