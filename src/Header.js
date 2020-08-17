@@ -9,7 +9,7 @@ function Header() {
   //since my state only contin basket I am destctring it elsei woulr have used  "state" object insted of basekt
   //dipatch will communicate with my reducer to perfro logic on data layer
   // const [{basket} , dispatch] = useStateValue();
-  const [{ basket }] = useStateValue(); //don't need dispatcer in this case
+  const [{ basket, user }] = useStateValue(); //don't need dispatcer in this case
 
   return (
     <nav className="header">
@@ -33,7 +33,8 @@ function Header() {
         {/* first link */}
         <Link to="login" className="header_link">
           <div className="header_option">
-            <span className="header_option_line1">Hello Prateek</span>
+            <span className="header_option_line1">Hello {user?.email}</span>{" "}
+            //without this ? I was getting error.
             <span className="header_option_line2">Sign In</span>
           </div>
         </Link>

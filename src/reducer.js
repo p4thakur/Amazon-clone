@@ -2,6 +2,7 @@
 
 export const initialState = {
   basket: [], //intilize and empty bucket
+  user: null,
 };
 
 export const getBasketTotal = (basket) =>
@@ -12,6 +13,12 @@ export const getBasketTotal = (basket) =>
 function reducer(state, action) {
   console.log(action);
   switch (action.type) {
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user, //chnage the use to action.user
+      };
+      break;
     case "ADD_TO_BASKET":
       return {
         ...state, //it says return all the state(basket user and more)
